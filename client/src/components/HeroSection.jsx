@@ -26,7 +26,7 @@ export const HeroSection = () => {
   ];
 
   const achievements = [
-    { number: "7+", label: "Projects Built", icon: <Shield className="h-3 w-3" /> },
+    { number: "8+", label: "Projects Built", icon: <Shield className="h-3 w-3" /> },
     { number: "9.09", label: "CGPA", icon: <TrendingUp className="h-3 w-3" /> },
     { number: "2026", label: "Graduating", icon: <Zap className="h-3 w-3" /> }
   ];
@@ -93,14 +93,14 @@ export const HeroSection = () => {
 
       <div className="container max-w-7xl mx-auto w-full mt-16 sm:mt-0">
         <motion.div
-          className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-20"
+          className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-20"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={{ hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.25, delayChildren: 0.5 } } }}
         >
 
           {/* Left — Text Content */}
-          <div className="flex-1 text-center lg:text-left max-w-2xl mx-auto lg:mx-0 w-full">
+          <div className="flex-1 text-center lg:text-left max-w-2xl mx-auto lg:mx-0 w-full px-0 sm:px-4 lg:px-0">
             <motion.div
               className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs sm:text-sm font-medium mb-6 sm:mb-8 backdrop-blur-sm"
               variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}
@@ -191,18 +191,18 @@ export const HeroSection = () => {
             </motion.div>
           </div>
 
-          {/* Right — Code Card — HIDDEN on mobile */}
+          {/* Right — Code Card — visible on all screens */}
           <motion.div
-            className="hidden lg:flex flex-1 justify-center lg:justify-end w-full"
+            className="flex flex-1 justify-center lg:justify-end w-full"
             variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}
           >
-            <div className="relative w-full max-w-md">
+            <div className="relative w-full max-w-sm sm:max-w-md">
               <motion.div
-                className="bg-background/90 border border-border rounded-2xl p-6 xl:p-8 backdrop-blur-sm shadow-2xl w-full"
+                className="bg-background/90 border border-border rounded-2xl p-4 sm:p-6 xl:p-8 backdrop-blur-sm shadow-2xl w-full"
                 whileHover={{ y: -4 }}
                 transition={{ type: "spring", stiffness: 400, damping: 25 }}
               >
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-4 sm:mb-6">
                   <div className="flex gap-2">
                     <div className="w-3 h-3 rounded-full bg-red-400/80"></div>
                     <div className="w-3 h-3 rounded-full bg-yellow-400/80"></div>
@@ -214,14 +214,14 @@ export const HeroSection = () => {
                   <div className="w-4 h-4 bg-green-400/20 rounded-full animate-pulse"></div>
                 </div>
 
-                <div className="font-mono text-sm bg-primary/5 rounded-lg border border-primary/10 min-h-[280px] flex">
-                  <div className="p-4 xl:p-6 w-full">
+                <div className="font-mono text-sm bg-primary/5 rounded-lg border border-primary/10 min-h-[200px] sm:min-h-[280px] flex">
+                  <div className="p-3 sm:p-4 xl:p-6 w-full">
                     <div className="grid grid-cols-1 gap-1 h-full content-start">
                       {codeSnippets.map((line, index) => (
                         <div
                           key={index}
                           className={`
-                            min-h-[20px] flex items-start text-xs xl:text-sm
+                            min-h-[18px] flex items-start text-[10px] sm:text-xs xl:text-sm
                             ${index < currentCodeLine ? 'opacity-100' : 'opacity-0'}
                             ${index === currentCodeLine ? 'opacity-100' : ''}
                             transition-opacity duration-150 ease-in-out

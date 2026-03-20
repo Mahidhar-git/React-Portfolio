@@ -4,16 +4,17 @@ import { useNavigate } from "react-router-dom";
 import { ArrowLeft, Award, ChevronDown, ChevronUp } from "lucide-react";
 
 const certifications = [
-  { id: 1, title: "Programming in Java", issuer: "NPTEL", category: "Programming", date: "2024", image: "/certifications/Programming in Java.jpg", color: "#f97316" },
-  { id: 2, title: "Cloud Computing", issuer: "NPTEL", category: "Cloud", date: "2024", image: "/certifications/Cloud Computing.jpg", color: "#fb923c" },
-  { id: 3, title: "OCI AI Foundations Associate", issuer: "Oracle University", category: "AI / Cloud", date: "Oct 2025", image: "/certifications/oracle3.jpg", color: "#ef4444" },
-  { id: 4, title: "OCI Generative AI Professional", issuer: "Oracle University", category: "AI / Cloud", date: "Oct 2025", image: "/certifications/oracle2.jpg", color: "#dc2626" },
-  { id: 5, title: "OCI Data Science Professional", issuer: "Oracle University", category: "AI / Cloud", date: "Oct 2025", image: "/certifications/oracle1.jpg", color: "#f97316" },
-  { id: 6, title: "Exploring Artificial Intelligence", issuer: "IBM SkillsBuild", category: "AI", date: "Feb 2026", image: "/certifications/Completion Certificate _ SkillsBuild.jpg", color: "#3b82f6" },
-  { id: 7, title: "Interacting with AI", issuer: "IBM SkillsBuild", category: "AI", date: "Feb 2026", image: "/certifications/Completion Certificate _ SkillsBuild1.jpg", color: "#06b6d4" },
-  { id: 8, title: "Technology Job Simulation", issuer: "Deloitte", category: "Industry", date: "Jul 2025", image: "/certifications/deloitte-job-simulation.jpg", color: "#22c55e" },
-  { id: 9, title: "Competitive Programming & Algorithmic Techniques", issuer: "Six Phrase — SVCE", category: "Internship", date: "May–Jul 2025", image: "/certifications/internship-sixprase.jpg", color: "#f59e0b" },
-  { id: 10, title: "Generative AI for Beginners", issuer: "Simplilearn SkillUp", category: "AI", date: "Jul 2025", image: "/certifications/simplilearn-genai.jpg", color: "#f97316" },
+  { id: 1, title: "Full Stack Development (MERN)", issuer: "SmartInternz", category: "Internship", date: "Mar 2026", image: "/certifications/Certificate - SmartInternz.jpg", color: "#22c55e" },
+  { id: 2, title: "Programming in Java", issuer: "NPTEL", category: "Programming", date: "2024", image: "/certifications/Programming in Java.jpg", color: "#f97316" },
+  { id: 3, title: "Cloud Computing", issuer: "NPTEL", category: "Cloud", date: "2024", image: "/certifications/Cloud Computing.jpg", color: "#fb923c" },
+  { id: 4, title: "OCI AI Foundations Associate", issuer: "Oracle University", category: "AI / Cloud", date: "Oct 2025", image: "/certifications/oracle3.jpg", color: "#ef4444" },
+  { id: 5, title: "OCI Generative AI Professional", issuer: "Oracle University", category: "AI / Cloud", date: "Oct 2025", image: "/certifications/oracle2.jpg", color: "#dc2626" },
+  { id: 6, title: "OCI Data Science Professional", issuer: "Oracle University", category: "AI / Cloud", date: "Oct 2025", image: "/certifications/oracle1.jpg", color: "#f97316" },
+  { id: 7, title: "Exploring Artificial Intelligence", issuer: "IBM SkillsBuild", category: "AI", date: "Feb 2026", image: "/certifications/Completion Certificate _ SkillsBuild.jpg", color: "#3b82f6" },
+  { id: 8, title: "Interacting with AI", issuer: "IBM SkillsBuild", category: "AI", date: "Feb 2026", image: "/certifications/Completion Certificate _ SkillsBuild1.jpg", color: "#06b6d4" },
+  { id: 9, title: "Technology Job Simulation", issuer: "Deloitte", category: "Industry", date: "Jul 2025", image: "/certifications/deloitte-job-simulation.jpg", color: "#22c55e" },
+  { id: 10, title: "Competitive Programming & Algorithmic Techniques", issuer: "Six Phrase — SVCE", category: "Internship", date: "May–Jul 2025", image: "/certifications/internship-sixprase.jpg", color: "#f59e0b" },
+  { id: 11, title: "Generative AI for Beginners", issuer: "Simplilearn SkillUp", category: "AI", date: "Jul 2025", image: "/certifications/simplilearn-genai.jpg", color: "#f97316" },
 ];
 
 export const Certifications = () => {

@@ -28,7 +28,7 @@ export const CertificationsSection = () => {
         </h2>
 
         <p className="text-muted-foreground mb-4 text-lg">
-          10 certifications across AI, Cloud, Programming and Industry.
+          8+ certifications across AI, Cloud, Programming and Industry.
         </p>
 
         <div className="flex flex-wrap justify-center gap-3 mb-10">

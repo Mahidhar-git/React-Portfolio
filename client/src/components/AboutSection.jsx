@@ -10,15 +10,15 @@ export const AboutSection = () => {
 
   const achievements = [
     { number: "9.09", label: "CGPA", icon: <GraduationCap className="h-5 w-5 text-orange-500" />, suffix: "" },
-    { number: "7", label: "Projects Built", icon: <Briefcase className="h-5 w-5 text-orange-500" />, suffix: "+" },
+    { number: "8", label: "Projects Built", icon: <Briefcase className="h-5 w-5 text-orange-500" />, suffix: "+" },
     { number: "Tirupati", label: "Location", icon: <MapPin className="h-5 w-5 text-orange-500" />, suffix: "" },
     { number: "Open", label: "To Work", icon: <Target className="h-5 w-5 text-orange-500" />, suffix: "" },
   ];
 
   const techStack = [
     { category: "Languages", items: ["Java", "JavaScript", "C", "HTML5", "CSS3"] },
-    { category: "Frontend & Backend", items: ["React", "Tailwind CSS", "Spring Boot", "REST APIs", "Thymeleaf"] },
-    { category: "Database & Tools", items: ["MySQL", "MongoDB", "PostgreSQL", "Git", "GitHub", "Docker", "Postman", "DSA"] },
+    { category: "Frontend & Backend", items: ["React", "Tailwind CSS", "Spring Boot", "REST APIs"] },
+    { category: "Database & Tools", items: ["MySQL", "PostgreSQL", "Git", "GitHub", "Docker", "Postman", "DSA"] },
   ];
 
   const features = [

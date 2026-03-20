@@ -33,7 +33,6 @@ const skills = [
   { name: "Tailwind CSS", level: 70, category: "frontend", icon: "tailwind" },
   { name: "MySQL", level: 80, category: "database", icon: "mysql" },
   { name: "PostgreSQL", level: 70, category: "database", icon: "postgresql" },
-  { name: "MongoDB", level: 65, category: "database", icon: "mongodb" },
   { name: "Git", level: 80, category: "tools", icon: "git" },
   { name: "GitHub", level: 80, category: "tools", icon: "github" },
   { name: "Docker", level: 60, category: "tools", icon: "docker" },
